@@ -1,0 +1,391 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+html {
+  font-family: 'Prompt', sans-serif;
+  padding: 0;
+  
+
+}
+
+a, a:visited {
+  color: inherit;
+
+}
+
+body {
+  background-color: #376996;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+}
+
+body main {
+  flex: 1;
+  display: flex;
+}
+body header {
+  background-color: #3E1929;
+  border-bottom: 8px #B7C3F3 solid;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body header .inner{
+  width: 80vw;
+  padding: 10px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+header ul{
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  gap: 12px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #B7C3F3;
+  
+  
+}
+
+body .login, body .sign-up, body .member-join , body .message-page, body .create-message{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items:center;
+}
+
+
+
+.sign-up .inner, .member-join .inner, .login .inner, .create-message .inner  {
+  background-color: #B7C3F3;
+  padding: 25px;
+  border-radius: 12px;
+} 
+.message-page .inner {
+  width: 80%;
+  min-height: 80%;
+  margin: 50px 0;
+  background-color: #B7C3F3;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.member-join h2 {
+  text-align: center;
+  margin: 0;
+}
+.member-join h1{
+  font-size: 64px;
+  margin: 0;
+  font-weight: 500;
+}
+
+
+.member-join input {
+  border-radius: 12px;
+  font-size: 30px;
+  border: 1px rgba(0,0,0,.5) solid;
+
+  height: 40px;
+  font-family: "Prompt", sans-serif;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.member-join form {
+  display: flex;
+  
+  justify-content: center;
+  gap: 15px;
+}
+.member-join .inner a {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.member-join button {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px rgba(0,0,0,.5) solid;
+  font-family: "Prompt", sans-serif;
+  height: 40px;
+  width: 25%;
+}
+.login form, .sign-up form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .inner {
+  box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+    margin: 50px 0;
+}
+.login form input[type='submit'] {
+  padding: 10px;
+  border-radius: 9999px;
+  border: 1px rgba(0,0,0,.5) solid;
+  cursor: pointer;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.sign-up form input[type='submit'],.login form input[type='submit'] {
+  padding: 10px;
+  border-radius: 9999px;
+  border: 1px rgba(0,0,0,.5) solid;
+  cursor: pointer;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.login form .inputs, .create-message form .inputs{
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+
+}
+
+.sign-up form .inputs {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.login label, .sign-up label, .create-message label {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.login form .inputs input{
+  width: 250px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px rgba(0,0,0,.5) solid;
+  font-family: "Prompt", sans-serif;
+}
+
+
+.sign-up form .inputs input, .create-message .inputs input {
+  width: 700px;
+  padding: 10px;
+  border: 2px rgba(0,0,0,.5) solid;
+  border-radius: 12px;
+  font-family: "Prompt", sans-serif;
+  font-size: 18px;
+}
+.create-message .inputs textarea {
+  width: 1000px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px rgba(0,0,0,.5) solid;
+  border-radius: 12px;
+  font-family: "Prompt", sans-serif;
+  height: 300px;
+  resize: none;
+}
+.create-message form {
+  display: flex;
+  flex-direction: column;
+}
+.create-message form input[type='submit'] {
+  align-self: flex-end;
+  font-family: "Prompt", sans-serif;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 9999px;
+  border: 2px rgba(0,0,0,.5) solid;
+  font-size: 24px;
+
+  font-weight: 500;
+}
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,.5);
+  padding: 10px;
+  padding-right: 20px;
+  width: 95%;
+}
+.message h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.message .cred {
+  margin: 0;
+  
+  padding-left: 10px;
+  padding-bottom: 5px;
+  color: #0f0f0f;
+  font-size: 16px;
+
+}
+
+.message .top {
+  border-bottom: 2px rgba(0,0,0,.5) solid;
+}
+
+.message .msg {
+  font-size: 20px;
+  margin: 4px;
+}
+
+.message form {
+  align-self: flex-end;
+}
+
+.message .delete {
+  background-color: rgb(247, 72, 72);
+  border: 2px solid red;
+  color: white;
+  font-weight: 500;
+  transition: all 200ms;
+  font-family: "Prompt", sans-serif;
+  font-size: 18px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+.message .delete:hover {
+  color: rgb(247, 72, 72);
+  background-color: initial;
+}
+.inner .pageTitle {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: center;
+  
+}
+
+.message-page .inner .pageTitle {
+  border-bottom: 2px rgba(0,0,0,.5) solid;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+header ul li {
+  padding: 0;
+  margin: 0;
+}
+header ul a {
+  text-decoration: none;
+}
+header ul a:hover {
+  text-decoration: underline;
+}
+
+h1.title {
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Concert One', cursive;
+  color: #B7C3F3;
+  font-size: 40px;
+  transition: all 100ms;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h1.title a {
+  text-decoration: none;
+}
+h1.title:hover {
+  color: #376996;
+}
+.no-message {
+  margin: auto 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.no-message .newPost {
+  width: fit-content;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  border-radius: 999px;
+  border: 2px rgb(0,0,0,.7) solid;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #3E1929;
+  border-top: 8px #B7C3F3 solid;
+  height: 72px;
+}
+
+footer {
+  fill: #B7C3F3;
+  font-size: 20px;
+  color: #B7C3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer a {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  transition: all 100ms;
+}
+
+footer svg {
+  height: 32px;
+  fill: #B7C3F3;
+  width: 32px;
+  transition: all 100ms;
+}
+
+footer span {
+  display: inline-block;
+  transition: all 100ms;
+}
+
+
+footer a:hover span {
+  margin-left: 5px;
+}
+footer a:hover span.name {
+  color:#376996;
+  margin-left: 5px;
+  transform: scale(1.1);
+}
+footer a:hover svg {
+  fill: #376996;
+  transform: scale(1.3);
+  
+  
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css"> 
+  <meta charset="UTF-8">
+  <title><%=title %></title>
+</head>
+<body>
+  <nav>
+    <ul><li><a href="/">Home page</a></li>
+      <li><a href="/member-join">Become a member</a></li>
+      <% if (!user) {%>
+      <li><a href="/login">Log in!</a></li>
+      <li><a href="/sign-up">Sign up!</a></li>
+      <%} else {%>
+          <li><a href="/create-message">Make a post!</a></li>
+          <li><a href="/logout">Log out</a></li>
+      <%}%>
+      
+  </ul>
+      </nav>
+  <h1>Hello!</h1>
+</body>
+</html>
